@@ -18,8 +18,8 @@
    
    function getCommits ($n = '') {
       $log = getLog($n);
-      $commits_raw = explode ('Date:   ', $log);
-      array_shift (&$commits_raw);
+      $commits_raw = explode('Date:   ', $log);
+      array_shift($commits_raw);
       $commits = array_map ('parseCommit', $commits_raw);
       return $commits;
    }

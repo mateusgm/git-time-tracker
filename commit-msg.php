@@ -1,5 +1,6 @@
 #!/usr/bin/php
 <?
+   date_default_timezone_set('America/Sao_Paulo');
 
    if (!isset($argv[1])) exit(1);
    
