@@ -1,9 +1,8 @@
 <?
 
-   function getLog ($n = '') {
+   function getLog ($params = '') {
       // $stdin   = 'php://stdin';
-      if ($n) $command = "git log -n ${n}";
-      else $command = "git log";
+      $command = "git log $params";
       $command .= ' 2> /dev/null';
       return shell_exec ($command);
    }
@@ -16,8 +15,8 @@
       return array ('date' => $date, 'msg' => $msg, 'spent' => $spent);
    }
    
-   function getCommits ($n = '') {
-      $log = getLog($n);
+   function getCommits ($params = '') {
+      $log = getLog($params);
       $commits_raw = explode('Date:   ', $log);
       array_shift($commits_raw);
       $commits = array_map ('parseCommit', $commits_raw);
