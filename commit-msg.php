@@ -9,7 +9,7 @@
    if ($msg[0] == '[') exit(0);
    
    require_once('gtt-functions.php');   
-   $commits  = getCommits(1);
+   $commits  = getCommits();
    
    if(empty($commits)) exit(0);
    
