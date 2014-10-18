@@ -1,4 +1,4 @@
-<?
+<?php
 
    function getLog ($params = '') {
       // $stdin   = 'php://stdin';

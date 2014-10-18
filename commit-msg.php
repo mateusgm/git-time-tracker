@@ -1,5 +1,5 @@
 #!/usr/bin/php
-<?
+<?php
    date_default_timezone_set('America/Sao_Paulo');
 
    if (!isset($argv[1])) exit(1);
@@ -20,3 +20,4 @@
    file_put_contents($argv[1], $msg);
    
 ?>
+n

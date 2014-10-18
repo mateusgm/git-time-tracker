@@ -1,5 +1,5 @@
-#!/usr/bin/php
-<?
+#!/usr/bin/env php
+<?php
    date_default_timezone_set('America/Sao_Paulo');
    require_once('gtt-functions.php');
    
